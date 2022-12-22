@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(./image/hot-img.webp) no-repeat center/cover;
+}
+/* common */
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+.hot {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(./image/hot-img.webp) no-repeat center/cover;
+}
+.hot #weather {
+    background: url(./image/hot-img.webp) no-repeat center/cover;
+}
+.cool {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(./image/cool-img.webp) no-repeat center/cover;
+}
+.cool #weather {
+    background: url(./image/cool-img.webp) no-repeat center/cover;
+}
+.cold {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(./image/cold-img.png) no-repeat center/cover;
+}
+.cold #weather {
+    background: url(./image/cold-img.png) no-repeat center/cover;
+}
+/* common-end */
+
+#weather {
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: url(./image/hot-img.webp) no-repeat center/cover;
+}
+
+.search {
+    width: 100%;
+    font-size: 19px;
+    padding: 6px 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0 10px 0 10px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.search:focus {
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    transition: 0.3s;
+}
+
+.capital {
+    text-shadow: 2px 2px rgba(0,0,0,0.8);
+}
+
+.time {
+    margin: 8px 0 25px 0; 
+    font-size: 15px;
+}
+
+.temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0,0,0,0.7);
+    background: rgba(225,225,225,0.4);
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 16px 0;
+}
+
+.short-desc {
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    margin: 30px;
+}
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+}
+.more-desc div{
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px #000;
+}
+.more-desc div i{
+    margin: 10px 0;
+}
+
